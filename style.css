@@ -1,0 +1,43 @@
+/* Apply basic styling to the grid container */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr); /* 9 columns each taking 1 fraction of available space */
+    grid-template-rows: repeat(9, 1fr); /* 9 rows each taking 1 fraction of available space */
+    gap: 1px; /* Gap between grid cells */
+    width: 90vw; /* 90% of the viewport width */
+    height: 90vw; /* 90% of the viewport width (creating a square grid) */
+    max-width: 500px; /* Maximum width of the grid */
+    max-height: 500px; /* Maximum height of the grid */
+    margin: auto; /* Center the grid horizontally */
+    border: 1px solid black; /* Border around the grid */
+  }
+  
+  /* Apply basic styling to each grid cell */
+  .grid-cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white; /* Background color of each cell */
+    border: 1px solid black; /* Border around each cell */
+    font-size: 20px; /* Font size of content inside the cell */
+  }
+input{
+    height: 50px;
+    width: 50px;
+    font-size: 40px;
+    text-align: center;
+} 
+body{
+    text-align: center;
+    align-items: center;
+}
+button{
+    background-color: chartreuse;
+    height: 50px;
+    width: 90px;
+    font-size: 20px;
+}
+button:hover{
+    opacity: 60%;
+   
+}
